@@ -9,7 +9,7 @@ const BASE_URL = "https://www.giantbomb.com/api";
 
 app.use(cors());
 
-// 🔄 Utility: Unified API Fetch Function
+//  Utility: Unified API Fetch Function
 async function fetchFromGiantBomb(endpoint) {
   const url = `${BASE_URL}${endpoint}&api_key=${apiKey}&format=json`;
 

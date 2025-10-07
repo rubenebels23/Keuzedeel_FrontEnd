@@ -11,7 +11,7 @@
 <body class="bg-gradient-to-b from-purple-900 via-purple-700 to-purple-500 min-h-screen text-white">
 
      <!-- navbar -->
-    <header class="w-full fixed top-0 z-50 bg-black bg-opacity-50 backdrop-blur shadow-md">
+    <header class="w-full top-0 z-50 bg-black bg-opacity-50 backdrop-blur shadow-md">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-purple-300">Refund4Life</div>
 
@@ -20,6 +20,7 @@
                 <button id="menu-btn" class="text-white text-3xl focus:outline-none">&#9776;</button>
             </div>
 
+            
             <!-- normal desktop -->
             <ul id="nav-links" class="hidden md:flex space-x-6 text-white font-medium">
                 <li><a href="index.php" class="hover:text-purple-400 transition">Home</a></li>
@@ -45,16 +46,18 @@
     </header>
 
     <script>
-    const menuBtn = document.getElementById('nav-links'); //!
+    const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
     </script>
 
   <!-- Main -->
-<main class="flex flex-col items-center p-8 pt-20">
+<main class="flex flex-col items-center p-8 pt-15">
     <div class="relative w-full max-w-xl">
       <input id="searchInput" type="text" placeholder="Search your favorite game..."
         class="w-full px-4 py-3 rounded-full text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400" />
@@ -64,9 +67,9 @@
           <circle r="8" cy="11" cx="11"></circle>
           <line y2="16.65" x2="16.65" y1="21" x1="21"></line>
           <defs>
-            <linearGradient gradientTransform="rotate(45)" id="cosmic-search">
-              <stop stop-color="#a9c7ff" offset="0%"></stop>
-              <stop stop-color="#6e8cff" offset="100%"></stop>
+            <linearGradient gradientTransf    orm="rotate(45)" id="cosmic-search">
+                <stop stop-color="#black" offset="0%"></stop>
+                <stop stop-color="#a78bfa" offset="100%"></stop>
             </linearGradient>
           </defs>
         </svg>
@@ -107,10 +110,12 @@
     </div>
   </div>
 
+<script>window.API = "http://localhost:5050";</script>
+<script src="script.js?v=force-5050-1"></script>
 
 
 
-  <!-- Your functional logic -->
+
   <script src="./script.js"></script>
 </body>
 

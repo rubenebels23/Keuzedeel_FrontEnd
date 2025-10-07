@@ -9,8 +9,8 @@
 </head>
 
 <body class="bg-gradient-to-br from-purple-500 via-purple-700 to-black min-h-screen text-white font-sans scroll-smooth">
-    <!-- navbar -->
-    <header class="w-full fixed top-0 z-50 bg-black bg-opacity-50 backdrop-blur shadow-md">
+  <!-- navbar -->
+    <header class="bg-black bg-opacity-50 backdrop-blur shadow-md">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-purple-300">Refund4Life</div>
 
@@ -19,7 +19,6 @@
                 <button id="menu-btn" class="text-white text-3xl focus:outline-none">&#9776;</button>
             </div>
 
-            
             <!-- normal desktop -->
             <ul id="nav-links" class="hidden md:flex space-x-6 text-white font-medium">
                 <li><a href="index.php" class="hover:text-purple-400 transition">Home</a></li>
@@ -48,10 +47,13 @@
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
     </script>
+
 
 
     <main class="flex items-center justify-center min-h-screen pt-32 text-center px-6">

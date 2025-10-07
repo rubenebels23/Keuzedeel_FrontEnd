@@ -24,7 +24,7 @@ $total = 0;
 
 <body class="bg-gradient-to-b from-purple-900 via-purple-700 to-purple-500 min-h-screen text-white">
 
-    <header class="w-full fixed top-0 z-50 bg-black bg-opacity-50 backdrop-blur shadow-md">
+    <header class="w-full top-0 z-50 bg-black bg-opacity-50 backdrop-blur shadow-md">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-purple-300">Refund4Life</div>
 
@@ -68,7 +68,7 @@ $total = 0;
     </script>
 
     <main class="p-8 max-w-6xl mx-auto">
-        <h1 class="text-3xl font-bold mb-6 text-center pt-20">Your Cart</h1>
+        <h1 class="text-3xl font-bold mb-6 text-center pt-5">Your Cart</h1>
 
         <?php if (empty($cart)): ?>
         <p class="text-center text-lg">Your cart is empty.</p>
@@ -85,7 +85,7 @@ $total = 0;
                 <p class="text-sm">Price: $<?= number_format($item['price'], 2) ?></p>
                 <p class="text-sm">Quantity: <?= $item['quantity'] ?></p>
                 <p class="text-sm mb-2">Subtotal: $<?= number_format($lineTotal, 2) ?></p>
-              <form action="/les1/FrontEnd/remove_from_cart.php" method="POST">
+              <form action="/frontenddeveloping_keuzedeel/remove_from_cart.php" method="POST">
 
 
 

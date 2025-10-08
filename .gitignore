@@ -1,0 +1,32 @@
+# --- Environment & secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- Node dependencies ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Build & cache files ---
+dist/
+build/
+.cache/
+.temp/
+tmp/
+*.tmp
+
+# --- OS / Editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+.vscode/
+.idea/
+*.iml
+
+# --- Coverage / testing ---
+coverage/
+*.lcov
